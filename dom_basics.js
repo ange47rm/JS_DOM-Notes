@@ -17,6 +17,7 @@ const pTag = document.querySelector("#welcome-paragraph");
 pTag.textContent = 'Something else';
 
 // target the red class inside the <li>
+
 const redElement = document.querySelector('li.red');             // get all the red class elements inside the li
 redElement.textContent = "RED!!!";
 redElement.classList.add('bold');                       // red element should refer to our 'bold' class defined in CSS (we add CSS to our document using JS)
@@ -24,8 +25,8 @@ redElement.classList.remove ('bold');                   // now we've just undone
 
 
 const allLiElements = document.querySelectorAll('li');  // get ALL of the li elements in the document
-console.dir(allLiElements);                             // console.dir gives us more details on our objects in the browser's console
 
+console.dir(allLiElements);                             // console.dir gives us more details on our objects in the browser's console
 console.dir (pTag);
 
 // 1. CREATE A DOM ELEMENT
@@ -38,7 +39,6 @@ newListItem.classList.add('purple');                    // link to purple CSS cl
 // 3. APPEND NEW DOM ELEMENT IN THE UNORDERED LIST
 const list = document.querySelector('ul');              // (assuming it's the first UL in the page, as we're just specifying using the ul tag, not so specific)
 list.appendChild(newListItem);                          // places DOM element in our document so it will show.
-
 })
 
 // QUERY SELECTOR NOTES:
